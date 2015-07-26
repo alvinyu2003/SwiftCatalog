@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Show Alert with TextField"; ObjectID = "CXD-S9-ty0"; */
+"CXD-S9-ty0.normalTitle" = "Show Alert with TextField";
+
+/* Class = "UIButton"; normalTitle = "Show Alert"; ObjectID = "LwY-Wh-dSX"; */
+"LwY-Wh-dSX.normalTitle" = "Mostrar La Alerta";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "bhv-pr-iyB"; */
+"bhv-pr-iyB.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Show Action Sheet"; ObjectID = "iyL-Pd-D27"; */
+"iyL-Pd-D27.normalTitle" = "Show Action Sheet";

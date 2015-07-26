@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  UICatalog
+
+  Created by Alvin Yu on 3/31/15.
+  Copyright (c) 2015 Alvin Yu. All rights reserved.
+*/
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Other" = "Other";
+"Alert" = "Alert";
+"Alert Message" = "Alert Message";
