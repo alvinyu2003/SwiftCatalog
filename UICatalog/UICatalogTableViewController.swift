@@ -44,9 +44,9 @@ class UICatalogTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCell", forIndexPath: indexPath) 
 
-        var item = items[indexPath.row]
+        let item = items[indexPath.row]
         cell.textLabel?.text = item.name
 
         return cell
@@ -57,7 +57,7 @@ class UICatalogTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        var item = items[indexPath.row]
+        let item = items[indexPath.row]
         self.performSegueWithIdentifier(item.segueName, sender: self)
      
         

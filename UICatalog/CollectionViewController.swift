@@ -12,7 +12,7 @@ class CollectionViewController: UICollectionViewController {
     let reuseIdentifier = "CollectionViewCell"
 }
 
-extension CollectionViewController : UICollectionViewDataSource {
+extension CollectionViewController {
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -28,8 +28,8 @@ extension CollectionViewController : UICollectionViewDataSource {
     }
 }
 
-extension CollectionViewController : UICollectionViewDelegate {
+extension CollectionViewController  {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        println("selected \(indexPath)")
+        print("selected \(indexPath)")
     }
 }

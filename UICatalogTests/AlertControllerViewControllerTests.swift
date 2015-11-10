@@ -56,9 +56,9 @@ class AlertControllerViewControllerTests: XCTestCase {
     }
     
     func checkButtonAction(button: UIButton?, action: String) -> Bool {
-         var actions: [String]? = button?.actionsForTarget(self.sut!, forControlEvent: UIControlEvents.TouchUpInside) as? [String]
+        let actions: [String]? = button?.actionsForTarget(self.sut!, forControlEvent: UIControlEvents.TouchUpInside)
         if let unwrappedActions = actions {
-            return contains(unwrappedActions, action)
+            return unwrappedActions.contains(action)
         }
         else {
             return false

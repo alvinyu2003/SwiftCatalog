@@ -44,16 +44,16 @@ class UICatalogTableViewControllerTests: XCTestCase {
     }
     
     func testThatTableViewCellExists() {
-        let cell = self.tableView?.dequeueReusableCellWithIdentifier("TableViewCell", forIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as! UITableViewCell
+        let cell = self.tableView!.dequeueReusableCellWithIdentifier("TableViewCell", forIndexPath: NSIndexPath(forItem: 0, inSection: 0))
         XCTAssertNotNil(cell, "table view cell should exist")
     }
     
     func testThatTableViewHasOneSection () {
-        XCTAssertTrue(self.tableView?.numberOfSections()==1, "the table view should have 1 section")
+        XCTAssertTrue(self.tableView?.numberOfSections==1, "the table view should have 1 section")
     }
     
     func testThatTableViewHasTwoRows () {
-        XCTAssertTrue(self.tableView?.numberOfRowsInSection(0)==2, "the table should have 2 rows")
+        XCTAssertTrue(self.tableView?.numberOfRowsInSection(0)==4, "the table should have 4 rows")
     }
     
 }

@@ -24,9 +24,9 @@ class LocalizableViewController: UIViewController {
     }
     
     func convertOneHundredThousandToDecimal() {
-        var numberFormatter = NSNumberFormatter()
+        let numberFormatter = NSNumberFormatter()
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-        var numberString = numberFormatter.stringFromNumber(100000)
+        let numberString = numberFormatter.stringFromNumber(100000)
         self.label.text = numberString
     }
 

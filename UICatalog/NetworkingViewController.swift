@@ -22,10 +22,12 @@ class NetworkingViewController: UIViewController {
         let session = NSURLSession(configuration: configuration)
         
         let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-            let dataResponse = NSString(data: data, encoding: NSUTF8StringEncoding)
-            println("data: \(dataResponse)")
-            println("received response: \(response)")
-            println("error: \(error)")
+            if let unwrappedData = data {
+                let dataResponse = NSString(data: unwrappedData, encoding: NSUTF8StringEncoding)
+                print("data: \(dataResponse)")
+            }
+            print("received response: \(response)")
+            print("error: \(error)")
         })
         
         task.resume()

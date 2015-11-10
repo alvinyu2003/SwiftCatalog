@@ -35,12 +35,12 @@ class AlertControllerViewController: UIViewController {
         
         //create actions
         let okAction = UIAlertAction(title: okButtonTitle, style: .Default, handler: { action in
-            println("ok")
+            print("ok")
         })
         let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel, handler: { action in
-            println("cancel")
+            print("cancel")
         });
-        let otherActionHandler = { (action: UIAlertAction!) -> Void in println("other") }
+        let otherActionHandler = { (action: UIAlertAction!) -> Void in print("other") }
         let otherAction = UIAlertAction(title: otherButtonTitle, style: .Default, handler: otherActionHandler)
         
         //add actions
@@ -78,7 +78,7 @@ class AlertControllerViewController: UIViewController {
         }
         
         //create actions
-        let okAction = UIAlertAction(title: "OK", style: .Default, handler: { action in NSLog(inputTextField!.text)
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: { action in NSLog(inputTextField!.text!)
             self.label.text = "You entered \(inputTextField!.text)"
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
