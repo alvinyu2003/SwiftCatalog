@@ -388,7 +388,7 @@
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 					"$(inherited)",
 					"${TARGET_BUILD_DIR}/Fabric.framework",
 					"${TARGET_BUILD_DIR}/Crashlytics.framework",
@@ -438,7 +438,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 					"$(inherited)",
 					"${TARGET_BUILD_DIR}/Fabric.framework",
 					"${TARGET_BUILD_DIR}/Crashlytics.framework",
@@ -463,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 					"$(SRCROOT)/**",
 					"${TARGET_BUILD_DIR}/Fabric.framework",
 					"${TARGET_BUILD_DIR}/Crashlytics.framework",
@@ -481,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 					"$(SRCROOT)/**",
 					"${TARGET_BUILD_DIR}/Fabric.framework",
 					"${TARGET_BUILD_DIR}/Crashlytics.framework",
