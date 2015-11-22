@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1927A6E11C028C0A005CEF46 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1927A6DF1C028C0A005CEF46 /* Fabric.framework */; };
+		1927A6E21C028C0A005CEF46 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1927A6E01C028C0A005CEF46 /* Crashlytics.framework */; };
 		1943A2331ACDF8FC0053893B /* Activity Indicator Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1943A2321ACDF8FC0053893B /* Activity Indicator Script.js */; };
 		199202CF1ACAEFC800FA58F3 /* AlertControllerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199202CE1ACAEFC800FA58F3 /* AlertControllerViewControllerTests.swift */; };
 		199202D01ACAF01400FA58F3 /* AlertControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3C1A71ACA1EF200B1D136 /* AlertControllerViewController.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1927A6DF1C028C0A005CEF46 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		1927A6E01C028C0A005CEF46 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		1943A2321ACDF8FC0053893B /* Activity Indicator Script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "Activity Indicator Script.js"; sourceTree = "<group>"; };
 		199202CE1ACAEFC800FA58F3 /* AlertControllerViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerViewControllerTests.swift; sourceTree = "<group>"; };
 		199202D31ACB5CE700FA58F3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1927A6E21C028C0A005CEF46 /* Crashlytics.framework in Frameworks */,
+				1927A6E11C028C0A005CEF46 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,8 @@
 		19B095271AC8D747009900E9 = {
 			isa = PBXGroup;
 			children = (
+				1927A6DF1C028C0A005CEF46 /* Fabric.framework */,
+				1927A6E01C028C0A005CEF46 /* Crashlytics.framework */,
 				199202D71ACB5D2F00FA58F3 /* Localizable.strings */,
 				19B095321AC8D747009900E9 /* UICatalog */,
 				19B095481AC8D747009900E9 /* UICatalogTests */,
@@ -182,6 +190,7 @@
 				19B0952D1AC8D747009900E9 /* Frameworks */,
 				19B0952E1AC8D747009900E9 /* Resources */,
 				1943A22D1ACDCEAB0053893B /* Copy Frameworks */,
+				1927A6DE1C028B41005CEF46 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -272,6 +281,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1927A6DE1C028B41005CEF46 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 077ae945fc50b5f087af131063ddb035954ac436 1e016acdd76ba2ef4311e5a37b4ebc9b4a616a032e307f44eb6a117cce949d5b";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19B0952C1AC8D747009900E9 /* Sources */ = {
@@ -438,6 +463,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
 					"$(SRCROOT)/**",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = UICatalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -454,6 +480,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
 					"$(SRCROOT)/**",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = UICatalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
