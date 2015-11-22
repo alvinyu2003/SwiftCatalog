@@ -15,6 +15,10 @@
 		199202D51ACB5D2F00FA58F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 199202D71ACB5D2F00FA58F3 /* Localizable.strings */; };
 		199202DE1ACC381100FA58F3 /* LocalizableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199202DD1ACC381100FA58F3 /* LocalizableViewController.swift */; };
 		199202E01ACC6B9B00FA58F3 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199202DF1ACC6B9A00FA58F3 /* ActivityIndicatorViewController.swift */; };
+		19A229DA1C02368E009BAE61 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1972FC751C022FA1005B405D /* Fabric.framework */; };
+		19A229DB1C02368E009BAE61 /* Fabric.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1972FC751C022FA1005B405D /* Fabric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19A229DC1C02368E009BAE61 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1972FC761C022FA1005B405D /* Crashlytics.framework */; };
+		19A229DD1C02368E009BAE61 /* Crashlytics.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1972FC761C022FA1005B405D /* Crashlytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19B095361AC8D747009900E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B095351AC8D747009900E9 /* AppDelegate.swift */; };
 		19B0953B1AC8D747009900E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B095391AC8D747009900E9 /* Main.storyboard */; };
 		19B0953D1AC8D747009900E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B0953C1AC8D747009900E9 /* Images.xcassets */; };
@@ -47,6 +51,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				19A229DD1C02368E009BAE61 /* Crashlytics.framework in Copy Frameworks */,
+				19A229DB1C02368E009BAE61 /* Fabric.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +94,8 @@
 			files = (
 				1972FC781C022FA1005B405D /* Crashlytics.framework in Frameworks */,
 				1972FC771C022FA1005B405D /* Fabric.framework in Frameworks */,
+				19A229DC1C02368E009BAE61 /* Crashlytics.framework in Frameworks */,
+				19A229DA1C02368E009BAE61 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +389,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
+					"$(inherited)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -428,6 +437,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
+					"$(inherited)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
