@@ -390,6 +390,8 @@
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"${TARGET_BUILD_DIR}/Fabric.framework",
+					"${TARGET_BUILD_DIR}/Crashlytics.framework",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -438,6 +440,8 @@
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"${TARGET_BUILD_DIR}/Fabric.framework",
+					"${TARGET_BUILD_DIR}/Crashlytics.framework",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -461,6 +465,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/**",
+					"${TARGET_BUILD_DIR}/Fabric.framework",
+					"${TARGET_BUILD_DIR}/Crashlytics.framework",
 				);
 				INFOPLIST_FILE = UICatalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -477,6 +483,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/**",
+					"${TARGET_BUILD_DIR}/Fabric.framework",
+					"${TARGET_BUILD_DIR}/Crashlytics.framework",
 				);
 				INFOPLIST_FILE = UICatalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
