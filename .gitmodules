@@ -1,0 +1,3 @@
+[submodule "iOS-Deferred-Deep-Linking-SDK"]
+	path = iOS-Deferred-Deep-Linking-SDK
+	url = https://github.com/BranchMetrics/iOS-Deferred-Deep-Linking-SDK.git
